@@ -27,7 +27,14 @@ handling ticket tiers and platform fees.
    ```bash
    npx prisma migrate dev --name init
    
-5. **Install dependencies:**
+5. **Create `.env`:**  
+   Add the following to a `.env` file in the project root:  
+   ```env
+   PORT=3000
+   PRODUCTION=false
+   DB_URL="postgresql://user:password@localhost:5432/ticketing?schema=public"
+      
+6. **Install dependencies:**
    ```bash
    npm run start:dev
    
